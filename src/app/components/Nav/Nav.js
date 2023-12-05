@@ -1,7 +1,7 @@
 // import Nav from './Nav'
 import Link from 'next/link'
 import Navcss from './Nav.module.css'
-export default function () {
+export default function Nav() {
     return <div className={Navcss.outer}>
         <div className={Navcss.wrapper}>
             <div className={Navcss.logo}>
