@@ -1,0 +1,13 @@
+.section {
+    width: 100%;
+    height: max-content;
+}
+
+.wrapper {
+    width: 1100px;
+    background: transparent;
+    height: max-content;
+    margin: auto;
+    padding: 5rem 0;
+
+}

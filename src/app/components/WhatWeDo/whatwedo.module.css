@@ -1,0 +1,60 @@
+.section {
+    width: 100%;
+    background: var(--black);
+}
+
+.wrapper {
+    width: 1100px;
+    padding: 5rem 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+}
+
+.wrapper h2 {
+    font-size: 32px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+}
+
+.restaurants {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.restaurantCard {
+    width: calc(100% / 3);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.restaurantCard img {
+    height: 150px;
+    width: 100%;
+    background: #FAB207;
+}
+
+.restaurantCard h2 {
+    color: var(--yellow);
+    font-size: 21px;
+    display: inline-block;
+}
+
+.restaurantCard span {
+    font-size: 21px;
+    letter-spacing: 2.5px;
+}
+
+.restaurantCard p {
+    color: #dddddd;
+    font-size: 15px;
+    line-height: 150%;
+}

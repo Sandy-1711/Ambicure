@@ -1,0 +1,53 @@
+.outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #18191B;
+    z-index: 100;
+}
+
+.wrapper {
+    height: 100px;
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    background: #FAB207;
+    border-radius: 50%;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 90%;
+
+}
