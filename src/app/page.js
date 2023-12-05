@@ -1,10 +1,11 @@
-import { Hero, Nav, Process, WhatWeDo } from "./components";
+import { Gallery, Hero, Nav, Process, WhatWeDo } from "./components";
 
 export default function Page() {
   return <section>
     <Nav />
     <Hero />
-    <WhatWeDo/>
-    <Process/>
+    <WhatWeDo />
+    <Process />
+    <Gallery />
   </section>
 }

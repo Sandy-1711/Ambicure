@@ -7,15 +7,11 @@ export default function Process() {
     useEffect(function () {
         var circles = document.querySelectorAll(`.${pcss.circle}`);
         circles.forEach(function (circle, index) {
-            // console.log(circle);
             circle.addEventListener('click', function () {
                 setSelect(index + 1);
                 var c = document.querySelector(`.${pcss.active}`);
-
                 c.classList.remove(pcss.active);
                 circle.classList.add(pcss.active);
-
-
             })
         })
     })
