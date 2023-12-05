@@ -6,7 +6,7 @@
 :root {
   --black: #18191B;
   --textColor: #eceff3;
-  --yellow:#FAB207;
+  --yellow: #FAB207;
 }
 
 * {
@@ -18,6 +18,7 @@
 
 body {
   width: 100dvw;
+  background: black;
   height: max-content;
   overflow-x: hidden;
 }
