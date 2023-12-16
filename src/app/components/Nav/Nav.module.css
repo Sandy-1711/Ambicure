@@ -61,6 +61,10 @@
 
 .burger {
     display: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
 }
 
 .close {
@@ -74,6 +78,13 @@
 @media screen and (width<1150px) {
     .wrapper {
         width: 990px;
+    }
+}
+
+@media screen and (width>990px) {
+    .burger:hover {
+        background: var(--yellow);
+        color: black;
     }
 }
 
@@ -109,10 +120,7 @@
         transition: 0.25s ease-in-out;
     }
 
-    .burger:hover {
-        background: var(--yellow);
-        color: black;
-    }
+
 
     .burger svg {
         height: 100%;
@@ -174,7 +182,8 @@
     .outer {
         height: max-content;
     }
-    .mlinks{
+
+    .mlinks {
         transition: 0.2s ease-in-out;
     }
 
@@ -186,8 +195,5 @@
         margin-right: 0px;
     }
 
-    .burger:hover {
-        background: #333333;
-        color: #dddddd;
-    }
+
 }
