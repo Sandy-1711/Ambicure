@@ -27,3 +27,8 @@
 .outer a{
     text-decoration: none;
 }
+@media screen and (width<768px) {
+    .outer{
+        height: 80px;
+    }
+}
