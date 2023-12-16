@@ -22,7 +22,7 @@
 
 .wrapper {
     position: relative;
-    width: 1100px;
+    width: 1150px;
     height: 100%;
     margin: auto;
     z-index: 2;
@@ -57,5 +57,6 @@
     letter-spacing: 2px;
     font-size: 15px;
     font-weight: 800;
+    cursor: pointer;
 
 }

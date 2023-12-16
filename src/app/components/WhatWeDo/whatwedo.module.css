@@ -4,7 +4,7 @@
 }
 
 .wrapper {
-    width: 1100px;
+    width: 1150px;
     padding: 5rem 0;
     margin: auto;
     display: flex;
@@ -37,7 +37,7 @@
 }
 
 .restaurantCard img {
-    height: 150px;
+    height: 180px;
     width: 100%;
     background: #FAB207;
 }

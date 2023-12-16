@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Herocss from './Hero.module.css'
 export default function Hero() {
     return (<section className={Herocss.section}>
@@ -5,7 +6,7 @@ export default function Hero() {
             <div className={Herocss.text}>
                 <p>FEATURED PROJECT</p>
                 <h2>GREEN INTERIOR</h2>
-                <button>OUR PORTFOLIO</button>
+                <Link href='https://ambicorspace.com/'><button>OUR PORTFOLIO</button></Link>
             </div>
         </div>
         <div className={Herocss.imageContainer}>

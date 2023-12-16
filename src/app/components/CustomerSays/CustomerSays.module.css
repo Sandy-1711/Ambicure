@@ -1,0 +1,122 @@
+.section {
+    width: 100%;
+    padding: 5rem 0;
+    background: transparent;
+    position: relative;
+}
+
+.bg {
+    background: url(http://ambicorspace.com/wp-content/uploads/2015/07/bg-3.jpg?id=185) !important;
+    background-attachment: fixed;
+    height: 100dvh;
+    width: 100dvw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.wrapper {
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper h2 {
+    color: var(--textColor);
+    font-size: 32px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+}
+
+.carouselContainer {
+    width: 95%;
+    margin: auto;
+    height: 200px;
+    /* background: var(--yellow); */
+    display: flex;
+    white-space: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* gap: 40px; */
+}
+
+
+
+.carousel {
+    transition: 0.5s ease-in-out;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.carousel>div {
+    position: relative;
+    color: white;
+    min-width: calc(50% - 20px);
+    padding: 35px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.quot {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: var(--yellow);
+    height: 35%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quot svg {
+    height: 22px;
+    user-select: none;
+    width: 22px;
+}
+
+.carousel p {
+    color: white;
+    font-size: 16px;
+    /* font-family: sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    user-select: none;
+}
+
+.carousel span {
+    user-select: none;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    color: var(--yellow);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: white;
+}

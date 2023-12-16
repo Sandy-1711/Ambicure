@@ -1,0 +1,34 @@
+.section {
+    height: 300px;
+    width: 100%;
+    /* background-image: url('https://ambicorspace.com/wp-content/uploads/2015/07/subheader-3.jpg'); */
+}
+
+.wrapper {
+    width: 1150px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    align-items: flex-end;
+}
+
+.wrapper h2 {
+    color: #eceff3;
+    font-size: 32px;
+    letter-spacing: 3.5px;
+    font-weight: 100;
+}
+
+.wrapper p {
+    color: #eceff3;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: var(--yellow);
+}
