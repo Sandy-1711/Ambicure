@@ -94,15 +94,18 @@
 .imageContainer:hover h2 {
     transform: translate(-50%, -50%) scale(1);
 }
-@media screen and (width<768px){
+
+@media screen and (width<768px) {
     .links {
         width: 90%;
     }
-    .links ul{
+
+    .links ul {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .links ul li:hover{
-        background: none;
+
+    .links ul li:hover {
+        background: var(--yellow);
     }
 }
