@@ -22,7 +22,7 @@ export default function ContactSection() {
                             <input type='email' placeholder='Your Email' />
                             <input type='number' placeholder='Your Phone' />
                         </div>
-                        <textarea></textarea>
+                        <textarea placeholder='Your message'></textarea>
                     </form>
                     <button>SUBMIT FORM</button>
                 </div>
