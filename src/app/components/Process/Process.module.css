@@ -89,3 +89,37 @@
     color: #dddddd;
     text-align: left;
 }
+
+@media screen and (width<1150px) {
+    .wrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .wrapper {
+        width: 95%;
+        margin: auto;
+    }
+
+    .circleContainer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    .text {
+        width: 90%;
+    }
+
+    .active::before {
+        display: none;
+    }
+
+    .active {
+        background: transparent;
+    }
+}

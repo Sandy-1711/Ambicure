@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -44,6 +45,7 @@
     transition: 0.15s ease-in-out;
     list-style: none;
     margin: 10px;
+    letter-spacing: 1.5px;
 }
 
 .links ul a {
@@ -55,4 +57,122 @@
 
 .links ul li:hover {
     color: var(--yellow);
+}
+
+.burger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+.mlinks{
+    display: none;
+}
+@media screen and (width<1150px) {
+    .wrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .wrapper {
+        width: 768px;
+        margin: auto;
+    }
+
+    .outer {
+        background: #000000 !important;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .burger {
+        /* display: block; */
+        margin-right: 30px;
+        background: #333333;
+        color: #dddddd;
+        height: 36px;
+        width: 36px;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: 0.25s ease-in-out;
+    }
+
+    .burger:hover {
+        background: var(--yellow);
+        color: black;
+    }
+
+    .burger svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mlinks {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        display: block;
+        padding-bottom: 0;
+        background: #000000;
+        transform: translateY(-10px);
+        overflow: hidden;
+        height: 0px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .mlinks ul {
+        flex-direction: column;
+        display: block;
+        width: 768px;
+        margin: auto;
+        /* padding-bottom: 40px; */
+    }
+
+
+    .mlinks ul a li {
+        padding: 18px;
+        margin: 0;
+        /* width: 100%; */
+        border-bottom: 1px solid #333333;
+    }
+
+    .mlinks ul a li:hover {
+        background: #111;
+    }
+
+    .mlinks .dot {
+        display: none;
+    }
+
+}
+
+@media screen and (width<768px) {
+    .wrapper {
+        width: 90%;
+        padding: 0.2rem 0;
+        height: max-content;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .outer {
+        height: max-content;
+    }
+
+    .mlinks ul {
+        width: 90%;
+    }
 }

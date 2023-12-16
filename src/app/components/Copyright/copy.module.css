@@ -57,3 +57,29 @@
     fill: black;
     /* background: white; */
 }
+
+@media screen and (width<1150px) {
+    .wrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (width<768px) {
+    .section {
+        height: max-content;
+        background: #0B0B0B;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        gap: 50px;
+        padding: 40px 0;
+    }
+
+}

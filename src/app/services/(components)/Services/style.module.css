@@ -93,3 +93,58 @@
 .content button:hover svg {
     fill: black;
 }
+
+@media screen and (width<1150px) {
+    .content {
+        padding: 0 100px;
+    }
+
+    .service:nth-of-type(2n) .content {
+        padding-left: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+        /* padding-right: calc((100% - 1150px) / 2); */
+    }
+}
+
+@media screen and (width<990px) {
+    .service {
+        flex-direction: column-reverse;
+        height: max-content;
+    }
+
+    .service:nth-of-type(2n) {
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .image img {
+        object-fit: cover;
+    }
+
+    .content {
+        width: 100%;
+        padding: 100px;
+        padding-top: 50px;
+    }
+}
+@media screen and (width<768px) {
+    .image{
+        width: 100%;
+        height: auto;
+    }
+    .content{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .service:nth-of-type(2n) .content {
+        /* padding-left: 0; */
+        padding-left: 30px;
+        padding-right: 30px;
+        /* padding-right: calc((100% - 1150px) / 2); */
+    }
+}

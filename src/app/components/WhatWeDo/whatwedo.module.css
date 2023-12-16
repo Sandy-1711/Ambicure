@@ -57,4 +57,65 @@
     color: #dddddd;
     font-size: 15px;
     line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (width<1150px) {
+    .wrapper {
+        width: 990px;
+    }
+}
+
+@media screen and (width<990px) {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .restaurantCard h2,
+    .restaurantCard span {
+        font-size: 16px;
+    }
+
+    .restaurantCard p {
+        margin-top: 10px;
+        font-size: 13px;
+        letter-spacing: 0.7px;
+    }
+
+    .restaurants {
+        gap: 40px;
+    }
+}
+
+@media screen and (width<768px) {
+    .restaurants {
+        flex-direction: column;
+    }
+
+    .restaurantCard {
+        height: max-content;
+        width: 100%;
+        gap: 0;
+    }
+    .restaurantCard img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .restaurants{
+        gap: 20px;
+    }
+    .restaurantCard h2{
+        font-size: 20px;
+    }
+    .restaurantCard span{
+        font-size: 20px;
+    }
+    .restaurantCard p{
+        margin: 0;
+        line-height: 25px;
+        margin: 30px 0;
+        margin-top: 10px
+    }
+    
 }
