@@ -17,14 +17,16 @@ export default function ContactSection() {
                 <div className={style.formArea}>
                     <p>SEND US A MESSAGE</p>
                     <form>
-                        <div>
-                            <input type='text' placeholder='Your Name' />
-                            <input type='email' placeholder='Your Email' />
-                            <input type='number' placeholder='Your Phone' />
+                        <div className={style.form}>
+                            <div>
+                                <input required type='text' placeholder='Your Name' />
+                                <input required type='email' placeholder='Your Email' />
+                                <input required type='number' placeholder='Your Phone' />
+                            </div>
+                            <textarea required placeholder='Your message'></textarea>
                         </div>
-                        <textarea placeholder='Your message'></textarea>
+                        <button type='submit'>SUBMIT FORM</button>
                     </form>
-                    <button>SUBMIT FORM</button>
                 </div>
                 <div className={style.contactArea}>
                     <p>CONTACT INFO</p>
