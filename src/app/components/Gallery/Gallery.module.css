@@ -36,6 +36,10 @@
     background: var(--yellow);
 }
 
+.links ul .active:hover {
+    background: var(--yellow);
+}
+
 .links ul li {
     list-style: none;
 }
@@ -53,7 +57,7 @@
 
     width: calc(100dvw / var(--x));
     max-width: calc(100dvw / var(--x));
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/2.5;
     overflow: hidden;
     display: flex;
     justify-content: center;
