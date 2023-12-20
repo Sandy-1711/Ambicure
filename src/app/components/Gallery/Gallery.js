@@ -1,22 +1,24 @@
 'use client'
 import { usePathname } from 'next/navigation';
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 import galcss from './Gallery.module.css'
 import { useEffect, useState } from 'react'
 export default function Gallery() {
     const [slide, setSlide] = useState(1);
     const path = usePathname();
-    const tablet = useMediaQuery({
-        query: '(width < 990px)'
-    })
-    const mobile = useMediaQuery({
-        query: '(width < 768px)'
-    })
+    // const tablet = useMediaQuery({
+    //     query: '(width < 990px)'
+    // })
+    // const mobile = useMediaQuery({
+    //     query: '(width < 768px)'
+    // })
 
-    const smobile = useMediaQuery({
-        query: '(width < 480px)'
-    })
-
+    // const smobile = useMediaQuery({
+    //     query: '(width < 480px)'
+    // })
+    const tablet = window.innerWidth < 990 ? true : false
+    const mobile = window.innerWidth < 768 ? true : false;
+    const smobile = window.innerWidth < 480 ? true : false;
     useEffect(function () {
         const links = document.querySelectorAll(`.${galcss.links} ul li`);
         var active = document.querySelector(`.${galcss.active}`);
