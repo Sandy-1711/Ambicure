@@ -1,16 +1,14 @@
 import Link from 'next/link'
 import style from './style.module.css'
+// import Links from './Lists'
+import Lists from './Lists'
 export default function CustomService({ data, ...props }) {
     // console.log(data);
     return <div className={style.section}>
         <div className={style.wrapper}>
 
             <div className={style.links}>
-                <ul>
-                    <Link href={'/services/hospitalitydesign'}><li>HOSPITALITY DESIGN</li></Link>
-                    <Link href={'/services/officedesign'}><li>OFFICE DESIGN</li></Link>
-                    <Link href={'/services/commercialdesign'}><li>COMMERCIAL DESIGN</li></Link>
-                </ul>
+                <Lists />
             </div>
             <div className={style.content}>
 

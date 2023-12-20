@@ -3,7 +3,7 @@ import { Copyright, CustomContactButton, Footer, Gallery, HeroCustom, Nav } from
 export default function Page() {
     return <div>
         <Nav />
-        <HeroCustom imgSrc={'https://ambicorspace.com/wp-content/uploads/2015/07/subheader-11.jpg'} h2={'PROJECT 3 COLS'} p={' / PROJECT 3 COLS'} />
+        <HeroCustom imgSrc={'https://ambicorspace.com/wp-content/uploads/2015/07/subheader-11.jpg'} h2={'PROJECT 3 COLS'} p={' / PROJECTS'} />
         <Gallery />
         <CustomContactButton text="GET quotation" />
         <Footer />
