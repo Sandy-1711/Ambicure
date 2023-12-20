@@ -1,24 +1,11 @@
 'use client'
 import { usePathname } from 'next/navigation';
-// import { useMediaQuery } from 'react-responsive'
 import galcss from './Gallery.module.css'
 import { useEffect, useState } from 'react'
 export default function Gallery() {
     const [slide, setSlide] = useState(1);
     const path = usePathname();
-    // const tablet = useMediaQuery({
-    //     query: '(width < 990px)'
-    // })
-    // const mobile = useMediaQuery({
-    //     query: '(width < 768px)'
-    // })
 
-    // const smobile = useMediaQuery({
-    //     query: '(width < 480px)'
-    // })
-    const tablet = window.innerWidth < 990 ? true : false
-    const mobile = window.innerWidth < 768 ? true : false;
-    const smobile = window.innerWidth < 480 ? true : false;
     useEffect(function () {
         const links = document.querySelectorAll(`.${galcss.links} ul li`);
         var active = document.querySelector(`.${galcss.active}`);
@@ -36,7 +23,13 @@ export default function Gallery() {
         imageContainer.forEach(function (img) {
             const data = img.getAttribute('data')
             if (Number(data) === slide || slide === 1) {
-                img.style.width = 'calc(100dvw / var(--x))';
+                if (path === '/gallery') {
+                    img.style.width = "calc(100% / var(--x1))";
+                }
+                else {
+
+                    img.style.width = 'calc(100% / var(--x))';
+                }
                 img.style.transition = "0.5s ease all"
             }
             else {
@@ -44,19 +37,6 @@ export default function Gallery() {
             }
         })
     }, [slide])
-    var x = 4;
-    if (smobile) {
-        x = 1;
-    }
-    else if (mobile) {
-        x = 2;
-    }
-    else if (tablet || path === '/gallery') {
-        x = 3;
-    }
-    else {
-        x = 4;
-    }
 
     return <section className={galcss.section}>
         <div className={galcss.links}>
@@ -68,51 +48,51 @@ export default function Gallery() {
             </ul>
         </div>
         <div className={galcss.imagesContainer}>
-            <div style={{ '--x': x }} data='4' className={galcss.imageContainer}>
+            <div data='4' className={galcss.imageContainer}>
                 <h2>Study Room</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/VINITA-MAM-UPDATED-NEW-PROJECT-converted_page-0029-750x499.jpg' alt='study room' />
             </div>
-            <div style={{ '--x': x }} className={galcss.imageContainer}>
+            <div className={galcss.imageContainer}>
                 <h2>Staircase</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/VINITA-MAM-UPDATED-NEW-PROJECT-converted_page-0048-750x499.jpg' alt='Stairs' />
             </div>
-            <div style={{ '--x': x }} data="3" className={galcss.imageContainer}>
+            <div data="3" className={galcss.imageContainer}>
                 <h2>Modular Kitchen</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/VINITA-MAM-UPDATED-NEW-PROJECT-converted_page-0043-750x499.jpg' alt='Modular Kitchen' />
             </div>
-            <div style={{ '--x': x }} data='4' className={galcss.imageContainer}>
+            <div data='4' className={galcss.imageContainer}>
                 <h2>Lounge Area</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/VINITA-MAM-UPDATED-NEW-PROJECT-converted_page-0016-1-750x499.jpg' alt='Lounge Area' />
             </div>
-            <div style={{ '--x': x }} className={galcss.imageContainer}>
+            <div className={galcss.imageContainer}>
                 <h2>Living Area</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/VINITA-MAM-UPDATED-NEW-PROJECT-converted_page-0016-750x499.jpg' alt='Living Area' />
             </div>
-            <div style={{ '--x': x }} className={galcss.imageContainer}>
+            <div className={galcss.imageContainer}>
                 <h2>Homeo Gym</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/GYM-1-750x499.jpg' alt='Homeo Gym' />
             </div>
-            <div style={{ '--x': x }} data='4' className={galcss.imageContainer}>
+            <div data='4' className={galcss.imageContainer}>
                 <h2>Elegant Bathrooms</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/VINITA-MAM-UPDATED-NEW-PROJECT-converted_page-0054-750x499.jpg' alt='Elegant Bathrooms' />
             </div>
-            <div style={{ '--x': x }} data='4' className={galcss.imageContainer}>
+            <div data='4' className={galcss.imageContainer}>
                 <h2>Dining Area</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/Picture6-1-750x499.jpg' alt='Dining Area' />
             </div>
-            <div style={{ '--x': x }} data='4' className={galcss.imageContainer}>
+            <div data='4' className={galcss.imageContainer}>
                 <h2>Bed Room</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2022/05/SANJAY-JHA-PROJECT-converted_page-0013-750x499.jpg' alt='Bed Area' />
             </div>
-            <div style={{ '--x': x }} data='4' className={galcss.imageContainer}>
+            <div data='4' className={galcss.imageContainer}>
                 <h2>Eco Green Interior</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2015/07/pf-1.jpg' alt='Eco green interior' />
             </div>
-            <div style={{ '--x': x }} data='2' className={galcss.imageContainer}>
+            <div data='2' className={galcss.imageContainer}>
                 <h2>Modern Elegance Suite</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2015/07/pf-2.jpg' alt='Modern Elegance Suits' />
             </div>
-            <div style={{ '--x': x }} data='2' className={galcss.imageContainer}>
+            <div data='2' className={galcss.imageContainer}>
                 <h2>Apartment Renovation</h2>
                 <img src='http://ambicorspace.com/wp-content/uploads/2015/07/pf-3.jpg' alt='Apartment Restroom' />
             </div>

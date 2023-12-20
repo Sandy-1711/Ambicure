@@ -50,13 +50,13 @@
     display: flex;
     flex-wrap: wrap;
     /* grid-template-columns: repeat(4, 1fr); */
+    /* justify-items: flex-start; */
 }
 
 .imageContainer {
-    /* transition: 0.25s ease-in-out; */
 
-    width: calc(100dvw / var(--x));
-    max-width: calc(100dvw / var(--x));
+    /* transition: 0.25s ease-in-out; */
+    width: calc(100% / var(--x));
     aspect-ratio: 4/2.5;
     overflow: hidden;
     display: flex;
@@ -65,6 +65,9 @@
     position: relative;
     cursor: pointer;
 }
+
+
+
 
 .imageContainer h2 {
     position: absolute;
@@ -97,6 +100,24 @@
 
 .imageContainer:hover h2 {
     transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (width<990px) {
+    .imagesContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (width<768px) {
+    .imagesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (width<480px) {
+    .imagesContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media screen and (width<768px) {
