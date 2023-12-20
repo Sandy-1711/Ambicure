@@ -6,10 +6,22 @@ export default function AboutContent() {
         </div>
         <div className={style.content}>
             <div>
-
-                <h1>Award Winning Interior Design</h1>
-                <h2>We engage closely with the construction teams to ensure that our ideas are implemented flawlessly on the ground.</h2>
-                <p>A house becomes a home when it is lived in. And to make it worthy of our clients to live in, we bring the best interior designing elements in the industry. We work closely with our clients to understand their perspectives with regard to their homes. Do they want to go for a chic post-modern look or a rustic wooden interior? From providing the most vibrant color options to the staidest palette, we have it all covered for you. From the most exclusive furniture pieces to the ultra-modern utilities, TRB helps you make your interior look like one out of a magazine.</p>
+                <h1>Award Winning Interior Designer</h1>
+                {/* <h2>We engage closely with the construction teams to ensure that our ideas are implemented flawlessly on the ground.</h2> */}
+                <p>
+                    At Ambicor Space, we redefine spaces, infusing creativity and functionality into every project. With a passion for design excellence, our dedicated team brings dreams to life, crafting interiors that resonate with individuality and purpose. From concept to completion, we embark on a journey with our clients, tailoring each detail to align seamlessly with their vision. Our commitment to quality, innovation, and client satisfaction defines us. Discover a world where aesthetics meet functionality – welcome to Ambicor Space, where your space becomes a masterpiece.
+                    <br />
+                    <br />
+                    At the heart of Ambicor Space, lies a commitment to transforming spaces into living works of art. With a keen understanding of our clients&apos; unique tastes and lifestyle, we embark on a collaborative journey to curate environments that go beyond aesthetics - they tell a story.
+                    <br />
+                    <br />
+                    Our team of seasoned designers combines creativity with practicality, ensuring that every design element serves a purpose. From conceptualization and meticulous planning to the final flourish, we take pride in delivering unparalleled craftsmanship. We believe that exceptional design has the power to enhance the way people live, work, and connect.
+                    <br />
+                    <br />
+                    At Ambicor Space, we don&apos;t just create interiors; we craft experiences. Our portfolio showcases a diverse range of projects, from chic urban residences to timeless corporate spaces. We stay on the cutting edge of design trends while respecting timeless classics, ensuring that your space stands the test of time.
+                    <br />
+                    <br />
+                    Experience the fusion of innovation and sophistication - entrust your vision to Ambicor Space, where every space becomes a testament to our passion for creating environments that inspire and captivate.</p>
             </div>
         </div>
     </div>

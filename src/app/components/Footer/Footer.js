@@ -6,7 +6,7 @@ export default function Footer() {
                 <div className={fcss.imageContainer}>
                     <img src='http://ambicorspace.com/wp-content/uploads/2022/05/Ambi-PNG.png' alt='Logo' />
                 </div>
-                <p>From providing the most vibrant color options to the staidest palette, we have it all covered for you. From the most exclusive furniture pieces to the ultra-modern utilities, TRB helps you make your interior look like one out of a magazine.</p>
+                <p>From providing the most vibrant color options to the staidest palette, we have it all covered for you. From the most exclusive furniture pieces to the ultra-modern utilities, Ambicor Space helps you make your interior look like one out of a magazine.</p>
             </div>
             <div className={fcss.div}>
                 <h2>INTERIOR DESIGNER IN RANCHI AND PUNE</h2>
