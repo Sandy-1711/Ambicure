@@ -12,14 +12,17 @@ export default function CustomService({ data, ...props }) {
                     <Link href={'/services/commercialdesign'}><li>COMMERCIAL DESIGN</li></Link>
                 </ul>
             </div>
-            <div className={style.desc}>
-                <p>{data.desc}</p>
-            </div>
-            <div className={style.images}>
-                {data.images.map(function (image,index) {
-                    // console.log(image);
-                    return <img src={image.src} key={index}/>
-                })}
+            <div className={style.content}>
+
+                <div className={style.desc}>
+                    <p>{data.desc}</p>
+                </div>
+                <div className={style.images}>
+                    {data.images.map(function (image, index) {
+                        // console.log(image);
+                        return <img src={image.src} key={index} />
+                    })}
+                </div>
             </div>
         </div>
     </div>

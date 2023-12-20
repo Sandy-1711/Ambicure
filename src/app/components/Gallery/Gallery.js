@@ -17,7 +17,6 @@ export default function Gallery() {
         query: '(width < 480px)'
     })
 
-    console.log(tablet);
     useEffect(function () {
         const links = document.querySelectorAll(`.${galcss.links} ul li`);
         var active = document.querySelector(`.${galcss.active}`);

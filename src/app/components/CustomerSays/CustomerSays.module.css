@@ -166,4 +166,13 @@
     .mobileContainer {
         display: flex;
     }
+
+    .carousel>div {
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    .carousel>div p {
+        word-wrap: break-word;
+    }
 }
