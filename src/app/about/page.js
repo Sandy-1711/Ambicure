@@ -1,13 +1,14 @@
 import { Copyright, CustomContactButton, CustomerSays, Footer, HeroCustom, Nav } from "../components";
 import Link from 'next/link'
 import AboutContent from "./(components)/AboutContent/AboutContent";
-import { Team } from "./(components)";
+import { Process } from "./(components)";
+// import { Team } from "./(components)";
 export default function Page() {
     return <div>
         <Nav />
         <HeroCustom imgSrc={'https://ambicorspace.com/wp-content/uploads/2015/07/subheader-3.jpg'} h2={'ABOUT'} p={' / ABOUT'} />
         <AboutContent />
-        <Team />
+        <Process />
         <CustomerSays />
         <CustomContactButton text="TALK WITH US" />
         <Footer />

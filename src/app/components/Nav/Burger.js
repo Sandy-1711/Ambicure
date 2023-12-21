@@ -1,11 +1,8 @@
 import Navcss from './Nav.module.css'
 export default function Burger() {
     return <button onClick={function () {
-        // e.preventDefault();
         const open = document.getElementById('open');
         const close = document.getElementById('close');
-        // console.log(open);
-        // console.log(close);
         const menu = document.querySelector(`.${Navcss.mlinks}`)
         if (open.style.display === 'block') {
             open.style.display = 'none';
