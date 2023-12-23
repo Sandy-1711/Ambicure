@@ -16,7 +16,7 @@ export default function Footer() {
                 <p>Office No:- 301, Business Square, opposite DSK Ranwara, Bawdhan, Pune :- 411021.</p>
                 <p>4007, 4th Floor, Skyline Tower, Kadru, Ranchi- 834002</p>
                 <p><span>Phone:</span> +91 88307 69062</p>
-                <p><span>Email:</span> <a href=''>contact@ambicorspace.com</a></p>
+                <p><span>Email:</span> <a href=''>ambicorspace@gmail.com</a></p>
                 <p><span>Web:</span> <a href={'http://ambicorspace.com/'}>http://ambicorspace.com/</a></p>
             </div>
         </div>
