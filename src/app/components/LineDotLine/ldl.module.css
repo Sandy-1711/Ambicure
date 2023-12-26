@@ -18,4 +18,14 @@
     width: 5px;
     background: var(--yellow);
     border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (width<768px) {
+    .cont{
+        width: 80vw;
+    }
+    .line{
+        width: 100%;
+    }
 }
