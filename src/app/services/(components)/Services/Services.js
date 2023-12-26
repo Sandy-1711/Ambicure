@@ -1,8 +1,31 @@
+'use client'
 import data from '../../utils/data'
 import Link from 'next/link'
 import style from './style.module.css'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+import { useLayoutEffect } from 'react'
 export default function Services() {
+    useLayoutEffect(function () {
+        gsap.registerPlugin(ScrollTrigger)
+        const services = document.querySelectorAll(`.${style.service}`);
+        services.forEach(function (service) {
 
+            gsap.to(service.firstChild, {
+                opacity: 1,
+                x: 0,
+                y: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: service,
+                    scroller: 'body',
+                    start: 'top bottom',
+                    // markers: true,
+
+                }
+            })
+        })
+    })
     return <div className={style.section}>
         <div className={style.service}>
 

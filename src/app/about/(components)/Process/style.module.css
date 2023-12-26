@@ -17,6 +17,8 @@
     font-size: 32px;
     letter-spacing: 2px;
     font-weight: 100;
+    transform: translate(0, 40px);
+    opacity: 0;
 }
 
 .processContainer {
@@ -36,6 +38,8 @@
     background: #000;
     font-size: 22px;
     color: var(--yellow);
+    transform: translate(-40px, 0);
+    opacity: 0;
 }
 
 .processContainer svg {

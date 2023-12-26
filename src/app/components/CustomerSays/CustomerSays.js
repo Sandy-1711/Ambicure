@@ -1,8 +1,9 @@
 'use client'
-import { useEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import LineDotLine from '../LineDotLine/LineDotLine'
 import cscss from './CustomerSays.module.css'
-
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 export default function CustomerSays() {
     useEffect(function () {
         const dots = document.querySelectorAll(`.${cscss.dot}`)
@@ -45,11 +46,38 @@ export default function CustomerSays() {
         //dragging logic here
 
     })
+    useLayoutEffect(function () {
+        gsap.to(`#cussays`, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+                scroller: 'body',
+                trigger: `#cussays`,
+                start: 'top bottom',
+            }
+        })
+
+        gsap.to(`.${cscss.carouselContainer}`, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+                scroller: 'body',
+                trigger: `.${cscss.carouselContainer}`,
+                start: 'top bottom',
+                // markers: true,
+
+            }
+        })
+    })
     return <section className={cscss.section}>
         <div className={cscss.bg}></div>
         <div className={cscss.wrapper}>
-            <h2>CUSTOMER SAYS</h2>
-            <LineDotLine />
+            <div className={cscss.cusays} id='cussays'>
+                <h2>CUSTOMER SAYS</h2>
+                <LineDotLine />
+            </div>
             <div className={cscss.carouselContainer}>
                 <div className={cscss.carousel}>
                     <div>

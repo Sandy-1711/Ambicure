@@ -1,9 +1,33 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import LineDotLine from '../LineDotLine/LineDotLine'
 import pcss from './Process.module.css'
+import gsap from 'gsap'
 export default function Process() {
     const [select, setSelect] = useState(1);
+    useLayoutEffect(function () {
+        gsap.to(`.${pcss.proline}`, {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: `.${pcss.proline}`,
+                scroller: 'body',
+                start: "top bottom",
+            }
+        })
+        gsap.to(`.${pcss.circle}`, {
+            opacity: 1,
+            // y: 0,
+            duration:1,
+            stagger:0.5,
+            scrollTrigger: {
+                scroller: 'body',
+                trigger: `.${pcss.circleContainer}`,
+                start: 'top bottom',
+            }
+        })
+    })
     useEffect(function () {
         var circles = document.querySelectorAll(`.${pcss.circle}`);
         circles.forEach(function (circle, index) {
@@ -17,8 +41,10 @@ export default function Process() {
     })
     return <section className={pcss.section}>
         <div className={pcss.wrapper}>
-            <h2>OUR PROCESS</h2>
-            <LineDotLine />
+            <div className={pcss.proline}>
+                <h2>OUR PROCESS</h2>
+                <LineDotLine />
+            </div>
             <div className={pcss.circleContainer}>
                 <div className={pcss.circle + ' ' + pcss.active}>
                     <h2>CLIENT REQUIREMENTS</h2>

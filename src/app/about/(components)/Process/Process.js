@@ -1,5 +1,35 @@
+'use client'
+import { useLayoutEffect } from 'react'
 import style from './style.module.css'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 export default function Process() {
+    useLayoutEffect(function () {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.to(`.${style.processContainer} span`, {
+            duration: 1,
+            opacity: 1,
+            x: 0,
+            // delay: 0.5,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: `.${style.processContainer}`,
+                scroller: 'body',
+                start: 'top bottom',
+            }
+        })
+        gsap.to(`.${style.wrapper} h2`, {
+            duration: 1,
+            y: 0,
+            x: 0,
+            opacity: 1,
+            scrollTrigger: {
+                scroller: 'body',
+                trigger: `.${style.processContainer}`,
+                start: 'top bottom',
+            }
+        })
+    })
     return <div className={style.section}>
         <div className={style.wrapper}>
             <div>

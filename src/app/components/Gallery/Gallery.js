@@ -1,11 +1,26 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import galcss from './Gallery.module.css'
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all'
 export default function Gallery() {
     const [slide, setSlide] = useState(1);
     const path = usePathname();
-
+    useLayoutEffect(function () {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.to(`.${galcss.links}`, {
+            duration: 0.5,
+            opacity: 1,
+            y: 0,
+            scrollTrigger: {
+                trigger: `.${galcss.section}`,
+                scroller: 'body',
+                start: 'top bottom',
+                // markers: true,
+            }
+        })
+    })
     useEffect(function () {
         const links = document.querySelectorAll(`.${galcss.links} ul li`);
         var active = document.querySelector(`.${galcss.active}`);
