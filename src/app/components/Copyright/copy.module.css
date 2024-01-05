@@ -28,7 +28,9 @@
 .wrapper p a:hover {
     text-decoration: underline;
 }
-
+.wrapper a{
+    color: white;
+}
 .wrapper div {
     display: flex;
     gap: 5px;

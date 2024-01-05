@@ -56,7 +56,7 @@ export default function Gallery() {
     return <section className={galcss.section}>
         <div className={galcss.links}>
             <ul>
-                <li className={galcss.active}>ALL PROJECT</li>
+                <li className={galcss.active}>ALL PROJECTS</li>
                 <li>HOSPITALITY</li>
                 <li>MODULAR KITCHEN</li>
                 <li>RESIDENTIAL</li>

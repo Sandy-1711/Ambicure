@@ -30,12 +30,12 @@ export default function ContactSection() {
                 </div>
                 <div className={style.contactArea}>
                     <p>CONTACT INFO</p>
-                    <p><span>Pune</span> - Office no.107, Ganesh Imperia, Opp. Omega Paradise SocietyY, Wakad - 411057</p>
+                    <p><span>Pune</span> - Office no.107, Ganesh Imperia, Opp. Omega Paradise Society, Wakad - 411057</p>
                     <p><span>Ranchi</span> - Office 2nd Floor, Madhushree Heights, Beside Central Bank, Near Meenakshi Netralaya, Harmu - 834002</p>
-                    <p><span>Phone:</span>+91 88307 69062, +91 86051 83887</p>
-                    <p><span>Email:</span>ambicorspace@gmail.com</p>
-                    <p><span>Web:</span>https://ambicorspace.com</p>
-                    <p><span>Open</span>Monday - Saturday 10:00 - 18:00</p>
+                    <p><span>Phone:</span> +91 86051 83887</p>
+                    <p><span>Email:</span> ambicorspace@gmail.com</p>
+                    <p><span>Web:</span> https://ambicorspace.com</p>
+                    <p><span>Open</span> Monday - Saturday 10:00 - 18:00</p>
                 </div>
             </div>
 

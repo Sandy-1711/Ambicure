@@ -36,7 +36,6 @@ export default function WhatWeDo() {
                 trigger: `.${wwdcss.restaurants}`,
                 scroller: 'body',
                 start: "top bottom",
-                // markers: true,
             }
         })
     })

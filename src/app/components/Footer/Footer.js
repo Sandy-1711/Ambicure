@@ -13,9 +13,9 @@ export default function Footer() {
             </div>
             <div className={fcss.div}>
                 <h2>CONTACT US</h2>
-                <p>Office No:- 301, Business Square, opposite DSK Ranwara, Bawdhan, Pune :- 411021.</p>
-                <p>4007, 4th Floor, Skyline Tower, Kadru, Ranchi- 834002</p>
-                <p><span>Phone:</span> +91 88307 69062</p>
+                <p><span style={{ color: 'var(--yellow)' }}>Ranchi</span> - Office 2nd Floor, Madhushree Heights, Beside Central Bank, Near Meenakshi Netralaya, Harmu - 834002</p>
+                <p><span style={{ color: 'var(--yellow)' }}>Pune</span> - Office no.107, Ganesh Imperia, Opp. Omega Paradise Society, Wakad - 411057</p>
+                <p><span>Phone:</span> +91 86051 83887</p>
                 <p><span>Email:</span> <a href=''>ambicorspace@gmail.com</a></p>
                 <p><span>Web:</span> <a href={'http://ambicorspace.com/'}>http://ambicorspace.com/</a></p>
             </div>
